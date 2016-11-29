@@ -23,22 +23,21 @@
         </header>
 
         <section class="post-content">
-          <script>
-            (function() {
-              var cx = '007354997634435981585:xgeaywbju60';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-
-          <div>
-          <gcse:search></gcse:search>
-          </div>
             {{content}}
+            <script>
+              (function() {
+                var cx = '007354997634435981585:xgeaywbju60';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+            </script>
+            <div>
+              <gcse:searchresults-only></gcse:searchresults-only>
+            </div>
         </section>
 
     </article>
